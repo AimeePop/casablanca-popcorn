@@ -4,13 +4,14 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px}
-.site-header{height:92px;padding:14px clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;background:var(--deep-red)}
+.site-header{height:92px;padding:14px 8vw;display:flex;align-items:center;justify-content:space-between;background:var(--deep-red)}
 .brand img{width:min(360px,48vw);display:block}
 nav{display:flex;gap:clamp(14px,2.8vw,40px)}
 nav a,footer a,.button,.text-link{font-family:var(--utility);color:var(--yellow);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
 nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-decoration:underline}
 .hero{position:relative;min-height:430px;overflow:hidden;display:grid;place-items:center;padding:44px 8vw;background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red) 57%,#ed3831)}
-.sunburst{position:absolute;width:1150px;height:1150px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--yellow) 0 10deg,var(--casablanca-red) 10deg 20deg);opacity:.66;transform:translate(25%,12%);-webkit-mask-image:radial-gradient(circle,#000 0 33%,transparent 72%);mask-image:radial-gradient(circle,#000 0 33%,transparent 72%)}
+.sunburst{position:absolute;z-index:0;width:1150px;height:1150px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--yellow) 0 10deg,var(--casablanca-red) 10deg 20deg);opacity:.66;transform:translate(25%,12%);-webkit-mask-image:radial-gradient(circle,#000 0 33%,transparent 72%);mask-image:radial-gradient(circle,#000 0 33%,transparent 72%)}
+.hero::after{position:absolute;z-index:0;right:-4%;bottom:0;width:min(78vw,1040px);height:100%;content:"";pointer-events:none;background:url("assets/casablanca-cinema-collage.png") right bottom/cover no-repeat;opacity:.96;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%)}
 .hero-copy{position:relative;z-index:1;width:min(600px,100%);margin-right:auto}
 .eyebrow{font-family:var(--utility);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 17px}
 .hero h1,.announcement h2,.story h2,.closing h2,.content-hero h1,.contact-grid h2{font-family:var(--display);font-weight:400;line-height:.89;margin:0}
@@ -73,6 +74,7 @@ footer div{display:flex;gap:22px}
 .brand img{width:min(245px,56vw)}
 .hero{min-height:470px}
 .sunburst{transform:translate(15%,23%)}
+.hero::after{right:-18%;width:125vw;background-position:68% bottom}
 .popcorn-smile{left:81%;top:75%}
 .announcement,.about-story,.contact-grid{grid-template-columns:1fr;padding-block:65px}
 .market-photo{width:92%;justify-self:end}
