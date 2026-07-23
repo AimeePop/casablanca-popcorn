@@ -11,13 +11,13 @@ nav a,footer a,.button,.text-link{font-family:var(--utility);color:var(--yellow)
 nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-decoration:underline}
 .hero{position:relative;min-height:430px;overflow:hidden;display:grid;place-items:center;padding:44px 8vw;background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red) 57%,#ed3831)}
 .sunburst{position:absolute;z-index:0;width:1150px;height:1150px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--yellow) 0 10deg,var(--casablanca-red) 10deg 20deg);opacity:.66;transform:translate(25%,12%);-webkit-mask-image:radial-gradient(circle,#000 0 33%,transparent 72%);mask-image:radial-gradient(circle,#000 0 33%,transparent 72%)}
-.hero::after{position:absolute;z-index:0;right:-4%;bottom:0;width:min(78vw,1040px);height:100%;content:"";pointer-events:none;background:url("assets/casablanca-cinema-collage.png") right bottom/cover no-repeat;opacity:.96;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%)}
+.hero::after{position:absolute;z-index:0;inset:0;content:"";pointer-events:none;background:url("assets/casablanca-cinema-collage.png") center bottom/100% 100% no-repeat;opacity:.96;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%)}
 .hero-copy{position:relative;z-index:1;width:min(600px,100%);margin-right:auto}
 .eyebrow{font-family:var(--utility);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 17px}
 .hero h1,.announcement h2,.story h2,.closing h2,.content-hero h1,.contact-grid h2{font-family:var(--display);font-weight:400;line-height:.89;margin:0}
 .hero h1{font-size:clamp(70px,10vw,144px);line-height:.99;letter-spacing:-.04em;color:var(--yellow);text-shadow:4px 4px 0 var(--deep-red)}
 .hero h1 em{font-style:normal;color:var(--paper);text-shadow:none}
-.hero-intro{margin:32px 0 28px;max-width:360px;font-size:19px;line-height:1.4;font-weight:500}
+.hero-intro{margin:32px 0 28px;max-width:360px;color:var(--paper);font-size:19px;line-height:1.4;font-weight:500}
 .button{display:inline-flex;gap:24px;align-items:center;padding:15px 19px;border:0;background:var(--ink);color:var(--yellow);font-weight:700;cursor:pointer}
 .button span{font-size:21px;line-height:.7}
 .popcorn-smile{position:absolute;z-index:2;left:84%;top:77%;width:clamp(112px,14vw,172px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
@@ -75,7 +75,7 @@ footer div{display:flex;gap:22px}
 .hero{min-height:470px}
 .hero-intro{color:var(--paper)}
 .sunburst{transform:translate(15%,23%)}
-.hero::after{right:auto;left:0;bottom:0;width:100%;height:58%;background-position:center bottom;background-size:cover;opacity:.94;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%)}
+.hero::after{inset:auto 0 0 0;width:100%;height:58%;background-position:center bottom;background-size:cover;opacity:.94;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%)}
 .popcorn-smile{left:81%;top:75%}
 .announcement,.about-story,.contact-grid{grid-template-columns:1fr;padding-block:65px}
 .market-photo{width:92%;justify-self:end}
