@@ -1,0 +1,90 @@
+/* Add your Adobe Fonts kit <link> in index.html above this stylesheet.
+   AM Udine is the display face; Myriad Variable Concept Light Semi-Extended is the UI face. */
+:root{--casablanca-red:#e11f26;--deep-red:#9e151a;--yellow:#ffda4d;--ink:#201914;--paper:#fff8e9;--sans:"Niramit",Arial,sans-serif;--utility:"myriad-pro-light-semiext","Niramit",sans-serif;--display:"am-udine","Niramit",Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px}
+.site-header{height:92px;padding:14px clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;background:var(--deep-red)}
+.brand img{width:min(360px,48vw);display:block}
+nav{display:flex;gap:clamp(14px,2.8vw,40px)}
+nav a,footer a,.button,.text-link{font-family:var(--utility);color:var(--yellow);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-decoration:underline}
+.hero{position:relative;min-height:430px;overflow:hidden;display:grid;place-items:center;padding:44px 8vw;background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red) 57%,#ed3831)}
+.sunburst{position:absolute;width:1150px;height:1150px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--yellow) 0 10deg,var(--casablanca-red) 10deg 20deg);opacity:.66;transform:translate(25%,12%);-webkit-mask-image:radial-gradient(circle,#000 0 33%,transparent 72%);mask-image:radial-gradient(circle,#000 0 33%,transparent 72%)}
+.hero-copy{position:relative;z-index:1;width:min(600px,100%);margin-right:auto}
+.eyebrow{font-family:var(--utility);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 17px}
+.hero h1,.announcement h2,.story h2,.closing h2,.content-hero h1,.contact-grid h2{font-family:var(--display);font-weight:400;line-height:.89;margin:0}
+.hero h1{font-size:clamp(70px,10vw,144px);line-height:.99;letter-spacing:-.04em;color:var(--yellow);text-shadow:4px 4px 0 var(--deep-red)}
+.hero h1 em{font-style:normal;color:var(--paper);text-shadow:none}
+.hero-intro{margin:32px 0 28px;max-width:360px;font-size:19px;line-height:1.4;font-weight:500}
+.button{display:inline-flex;gap:24px;align-items:center;padding:15px 19px;border:0;background:var(--ink);color:var(--yellow);font-weight:700;cursor:pointer}
+.button span{font-size:21px;line-height:.7}
+.popcorn-smile{position:absolute;z-index:2;left:84%;top:77%;width:clamp(112px,14vw,172px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
+.popcorn-smile img{display:block;width:100%;height:auto}
+.popcorn-smile:hover{animation:casa-pop .8s ease-in-out}
+.popcorn-smile:focus-visible{outline:3px solid var(--yellow);outline-offset:7px}
+ .popcorn-pop{position:fixed;z-index:20;width:var(--pop-size);height:calc(var(--pop-size) * .86);pointer-events:none;background:radial-gradient(circle at 50% 23%,#fffbd5 0 26%,transparent 28%),radial-gradient(circle at 27% 51%,#fff7bd 0 31%,transparent 33%),radial-gradient(circle at 73% 51%,#fff7bd 0 31%,transparent 33%),radial-gradient(circle at 50% 72%,#f9df7f 0 39%,transparent 41%);filter:drop-shadow(0 2px 1px rgba(107,55,15,.28));animation:popcorn-scatter 1.25s cubic-bezier(.13,.73,.34,1) forwards}
+@keyframes popcorn-scatter{0%{transform:translate(-50%,-50%) scale(.2) rotate(0);opacity:0}10%{opacity:1}70%{opacity:.8}100%{transform:translate(calc(-50% + var(--pop-x)),calc(-50% + var(--pop-y))) scale(.24) rotate(var(--pop-rotate));opacity:0}}
+@keyframes casa-pop{0%,100%{transform:translate(-50%,-50%) rotate(7deg) scale(1.12)}
+25%{transform:translate(-50%,-50%) rotate(-3deg) scale(1.18)}
+55%{transform:translate(-50%,-50%) rotate(12deg) scale(1.08)}
+75%{transform:translate(-50%,-50%) rotate(3deg) scale(1.15)}
+}
+.announcement{padding:74px max(8vw,30px);display:grid;grid-template-columns:minmax(250px,.8fr) minmax(280px,1.2fr);gap:clamp(34px,8vw,130px);align-items:center;background:var(--yellow)}
+.announcement h2{font-size:clamp(70px,9vw,126px);color:var(--casablanca-red)}
+.announcement h2 span{color:var(--deep-red)}
+.market-copy p:not(.eyebrow){max-width:450px;font-size:19px;line-height:1.55}
+.text-link{color:var(--deep-red);font-weight:700;letter-spacing:.09em}
+.market-photo{position:relative;margin:0;border:7px solid var(--ink);background:var(--paper);padding:10px;transform:rotate(2deg)}
+.market-photo img{display:block;width:100%;height:min(45vw,500px);object-fit:cover;object-position:center 48%;filter:saturate(.9) contrast(1.05)}
+.market-photo figcaption{position:absolute;right:0;bottom:-25px;padding:7px 11px;background:var(--deep-red);color:var(--yellow);font-family:var(--utility);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.story{display:grid;grid-template-columns:minmax(200px,.75fr) 1.2fr minmax(200px,.75fr);gap:clamp(25px,5vw,76px);align-items:center;padding:110px max(8vw,30px);background:var(--paper)}
+.photo-frame{border:7px solid var(--ink);background:var(--casablanca-red);padding:12px}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.84) contrast(1.06)}
+.frame-one{height:360px;transform:rotate(-4deg)}
+.frame-two{height:400px;transform:rotate(4deg)}
+.story-copy h2,.closing h2{font-size:clamp(47px,6vw,83px);color:var(--casablanca-red);margin-bottom:27px}
+.story-copy p:not(.eyebrow){font-size:17px;line-height:1.6;max-width:470px}
+.closing{background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red));color:var(--yellow);padding:104px max(8vw,30px);text-align:center}
+.closing h2{color:var(--yellow);margin-bottom:31px}
+.button-light{background:var(--yellow);color:var(--deep-red)}
+.content-page{min-height:calc(100vh - 92px);background:var(--paper)}
+.content-hero{padding:clamp(78px,12vw,150px) max(8vw,30px) clamp(66px,9vw,112px);color:var(--yellow);background:linear-gradient(132deg,var(--deep-red),var(--casablanca-red))}
+.content-hero h1{max-width:790px;font-size:clamp(58px,9vw,132px);line-height:.94}
+.lead{max-width:610px;margin:30px 0 0;font-size:clamp(19px,2.3vw,28px);line-height:1.35}
+.about-story,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(42px,9vw,145px);align-items:start;padding:clamp(70px,10vw,130px) max(8vw,30px)}
+.about-story>div:first-child{position:sticky;top:30px;border:7px solid var(--ink);padding:11px;background:var(--yellow);transform:rotate(-2deg)}
+.about-story img{display:block;width:100%;max-height:630px;object-fit:cover}
+.about-story p,.contact-grid p{font-size:18px;line-height:1.6;margin:0 0 22px}
+.contact-hero{background:linear-gradient(132deg,#ed3831,var(--casablanca-red),var(--deep-red))}
+.contact-grid{background:var(--yellow)}
+.contact-grid h2{font-size:clamp(48px,6vw,80px);color:var(--deep-red);margin-bottom:22px}
+.contact-form{display:grid;gap:18px;padding:clamp(24px,4vw,45px);background:var(--paper);border:4px solid var(--ink)}
+.contact-form label{display:grid;gap:7px;font-family:var(--utility);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.contact-form label span{font-weight:400;letter-spacing:0;text-transform:none}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid #9e151a;background:#fffdf7;padding:12px;color:var(--ink);font:16px var(--sans)}
+.contact-form textarea{resize:vertical}
+.contact-form .button{justify-self:start}
+footer{background:var(--deep-red);color:var(--yellow);border-top:1px solid #e95b47;padding:24px max(5vw,20px);display:flex;justify-content:space-between;gap:20px;font-size:12px}
+footer p{margin:0}
+footer div{display:flex;gap:22px}
+@media(max-width:700px){.site-header{height:74px}
+.site-header nav{display:flex}
+.brand img{width:min(245px,56vw)}
+.hero{min-height:470px}
+.sunburst{transform:translate(15%,23%)}
+.popcorn-smile{left:81%;top:75%}
+.announcement,.about-story,.contact-grid{grid-template-columns:1fr;padding-block:65px}
+.market-photo{width:92%;justify-self:end}
+.market-photo img{height:390px}
+.story{grid-template-columns:1fr;padding-block:72px}
+.story-copy{order:-1}
+.frame-one{height:310px;width:75%;justify-self:start}
+.frame-two{height:340px;width:75%;justify-self:end}
+.closing{padding-block:75px}
+.closing h2{font-size:clamp(42px,10vw,62px)}
+.about-story>div:first-child{position:static}
+.content-page{min-height:0}
+.content-hero{padding-block:78px}
+footer{flex-direction:column;align-items:center;text-align:center}
+}
