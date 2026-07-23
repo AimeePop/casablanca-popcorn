@@ -20,7 +20,7 @@ nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-deco
 .hero-intro{margin:32px 0 28px;max-width:360px;color:var(--paper);font-size:19px;line-height:1.4;font-weight:500}
 .button{display:inline-flex;gap:24px;align-items:center;padding:15px 19px;border:0;background:var(--ink);color:var(--yellow);font-weight:700;cursor:pointer}
 .button span{font-size:21px;line-height:.7}
-.popcorn-smile{position:absolute;z-index:2;left:34%;top:63%;width:clamp(112px,14vw,172px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
+.popcorn-smile{position:absolute;z-index:2;left:28%;top:57%;width:clamp(102px,11vw,145px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
 .popcorn-smile img{display:block;width:100%;height:auto}
 .popcorn-smile:hover{animation:casa-pop .8s ease-in-out}
 .popcorn-smile:focus-visible{outline:3px solid var(--yellow);outline-offset:7px}
@@ -80,7 +80,7 @@ footer div{display:flex;gap:22px}
 .hero-intro .intro-line{display:block}
 .sunburst{transform:translate(15%,23%)}
 .hero::after{inset:auto 0 0 0;width:100%;height:58%;background-position:center bottom;background-size:cover;opacity:.94;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%)}
-.popcorn-smile{left:81%;top:75%}
+.popcorn-smile{left:78%;top:58%}
 .announcement,.about-story,.contact-grid{grid-template-columns:1fr;padding-block:65px}
 .market-photo{width:92%;justify-self:end}
 .market-photo img{height:390px}
