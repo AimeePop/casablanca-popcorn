@@ -11,7 +11,7 @@ nav a,footer a,.button,.text-link{font-family:var(--utility);color:var(--yellow)
 nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-decoration:underline}
 .hero{position:relative;min-height:430px;overflow:hidden;display:grid;place-items:center;padding:44px 8vw;background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red) 57%,#ed3831)}
 .sunburst{position:absolute;z-index:0;width:1150px;height:1150px;border-radius:50%;background:repeating-conic-gradient(from 0deg,var(--yellow) 0 10deg,var(--casablanca-red) 10deg 20deg);opacity:.66;transform:translate(25%,12%);-webkit-mask-image:radial-gradient(circle,#000 0 33%,transparent 72%);mask-image:radial-gradient(circle,#000 0 33%,transparent 72%)}
-.hero::after{position:absolute;z-index:0;right:-4%;bottom:0;width:min(78vw,1040px);height:100%;content:"";pointer-events:none;background:url("assets/casablanca-cinema-collage.png") right bottom/cover no-repeat;opacity:.96;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%)}
+.hero::after{position:absolute;z-index:0;right:0;bottom:0;width:65vw;height:100%;content:"";pointer-events:none;background:url("assets/casablanca-cinema-collage.png") right bottom/cover no-repeat;opacity:.96;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 20%,rgba(0,0,0,.7) 74%,transparent 100%)}
 .hero-copy{position:relative;z-index:1;width:min(600px,100%);margin-right:auto}
 .eyebrow{font-family:var(--utility);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 17px}
 .hero h1,.announcement h2,.story h2,.closing h2,.content-hero h1,.contact-grid h2{font-family:var(--display);font-weight:400;line-height:.89;margin:0}
@@ -20,7 +20,7 @@ nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-deco
 .hero-intro{margin:32px 0 28px;max-width:360px;color:var(--paper);font-size:19px;line-height:1.4;font-weight:500}
 .button{display:inline-flex;gap:24px;align-items:center;padding:15px 19px;border:0;background:var(--ink);color:var(--yellow);font-weight:700;cursor:pointer}
 .button span{font-size:21px;line-height:.7}
-.popcorn-smile{position:absolute;z-index:2;left:84%;top:77%;width:clamp(112px,14vw,172px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
+.popcorn-smile{position:absolute;z-index:2;left:34%;top:63%;width:clamp(112px,14vw,172px);height:auto;padding:0;border:0;background:transparent;clip-path:inset(8% 7% 5% 7%);cursor:pointer;transform:translate(-50%,-50%) rotate(7deg) scale(1.12);transform-origin:center;transition:transform .25s ease}
 .popcorn-smile img{display:block;width:100%;height:auto}
 .popcorn-smile:hover{animation:casa-pop .8s ease-in-out}
 .popcorn-smile:focus-visible{outline:3px solid var(--yellow);outline-offset:7px}
@@ -48,7 +48,7 @@ nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-deco
 .story-copy p:not(.eyebrow){font-size:17px;line-height:1.6;max-width:470px}
 .story-copy{text-align:center}
 .popcorn-pano{width:100%;height:clamp(260px,37vw,570px);margin:0;overflow:hidden;background:#f4d494}
-.popcorn-pano img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.popcorn-pano img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%}
 .closing{background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red));color:var(--yellow);padding:104px max(8vw,30px);text-align:center}
 .closing h2{color:var(--yellow);margin-bottom:31px}
 .button-light{background:var(--yellow);color:var(--deep-red)}
@@ -77,6 +77,7 @@ footer div{display:flex;gap:22px}
 .brand img{width:min(218px,51vw)}
 .hero{min-height:470px}
 .hero-intro{color:var(--paper)}
+.movie-line{display:block}
 .sunburst{transform:translate(15%,23%)}
 .hero::after{inset:auto 0 0 0;width:100%;height:58%;background-position:center bottom;background-size:cover;opacity:.94;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 36%,rgba(0,0,0,.72) 78%,transparent 100%)}
 .popcorn-smile{left:81%;top:75%}
