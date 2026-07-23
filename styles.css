@@ -39,13 +39,16 @@ nav a:hover,nav a[aria-current="page"],footer a:hover,.text-link:hover{text-deco
 .market-photo{position:relative;margin:0;border:7px solid var(--ink);background:var(--paper);padding:10px;transform:rotate(2deg)}
 .market-photo img{display:block;width:100%;height:min(45vw,500px);object-fit:cover;object-position:center 48%;filter:saturate(.9) contrast(1.05)}
 .market-photo figcaption{position:absolute;right:0;bottom:-25px;padding:7px 11px;background:var(--deep-red);color:var(--yellow);font-family:var(--utility);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.story{display:grid;grid-template-columns:minmax(200px,.75fr) 1.2fr minmax(200px,.75fr);gap:clamp(25px,5vw,76px);align-items:center;padding:110px max(8vw,30px);background:var(--paper)}
+.story{display:grid;place-items:center;padding:110px max(8vw,30px) 80px;background:var(--paper)}
 .photo-frame{border:7px solid var(--ink);background:var(--casablanca-red);padding:12px}
 .photo-frame img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.84) contrast(1.06)}
 .frame-one{height:360px;transform:rotate(-4deg)}
 .frame-two{height:400px;transform:rotate(4deg)}
 .story-copy h2,.closing h2{font-size:clamp(47px,6vw,83px);color:var(--casablanca-red);margin-bottom:27px}
 .story-copy p:not(.eyebrow){font-size:17px;line-height:1.6;max-width:470px}
+.story-copy{text-align:center}
+.popcorn-pano{width:100%;height:clamp(260px,37vw,570px);margin:0;overflow:hidden;background:#f4d494}
+.popcorn-pano img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .closing{background:linear-gradient(128deg,var(--deep-red),var(--casablanca-red));color:var(--yellow);padding:104px max(8vw,30px);text-align:center}
 .closing h2{color:var(--yellow);margin-bottom:31px}
 .button-light{background:var(--yellow);color:var(--deep-red)}
