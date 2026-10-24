@@ -149,3 +149,16 @@ footer{flex-direction:column;align-items:center;text-align:center}
 @media(max-width:700px){.packaging{grid-template-columns:1fr}}
 
 .product-card-cheddar{box-shadow:12px 12px 0 #000}
+
+/* Local concept: one welcoming homepage opening. */
+.hero-visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,100px);align-items:center;padding:65px 8vw 80px}
+.hero-visit .hero-copy{width:100%;margin:0}
+.hero-visit .eyebrow{color:var(--yellow)}
+.hero-visit h1{font-size:clamp(65px,8vw,112px)}
+.hero-visit .hero-intro{max-width:420px;margin:24px 0;color:var(--paper);font-size:18px}
+.hero-market-details{color:var(--paper);font-size:16px;line-height:1.6;margin-bottom:25px}
+.hero-market-details p{margin:0 0 16px}
+.hero-market-details strong{color:var(--yellow)}
+.hero-booth{width:100%;max-width:510px;justify-self:center;z-index:1}
+.hero-visit .hero-booth img{height:auto}
+@media(max-width:700px){.hero-visit{grid-template-columns:1fr;padding:48px 8vw 65px;gap:42px}.hero-visit h1{font-size:clamp(64px,16vw,100px)}.hero-booth{width:94%;max-width:400px}.hero-visit .hero-intro{font-size:18px}}
