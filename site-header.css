@@ -1,0 +1,12 @@
+/* Shared header geometry across Casablanca pages. */
+body .site-header{box-sizing:border-box;height:92px;padding:14px calc(max(32px,(100vw - 1320px)/2) + 58px);display:flex;align-items:center;justify-content:space-between;gap:24px;background:#8b2226;border-bottom:1px solid #d0a65366}
+body .site-header .brand{margin:0;flex-shrink:0}
+body .site-header .brand img{display:block;width:min(360px,48vw);height:auto}
+body .site-header nav{display:flex;align-items:center;justify-content:flex-end;gap:clamp(14px,2.8vw,40px);flex-wrap:nowrap}
+@media(max-width:1050px) and (min-width:701px){body .site-header{padding-inline:68px}}
+@media(max-width:700px){
+ body .site-header{height:auto;min-height:112px;padding:18px 24px;flex-direction:column;justify-content:center;gap:16px;text-align:center}
+ body .site-header .brand{margin:0 auto}
+ body .site-header .brand img{width:min(300px,72vw)}
+ body .site-header nav{justify-content:center;flex-wrap:wrap;gap:24px}
+}

@@ -196,3 +196,16 @@ footer{flex-direction:column;align-items:center;text-align:center}
 .kitchen-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .kitchen-intro{padding-block:50px 60px}
 @media(max-width:850px){.kitchen-photo{width:90%;max-width:400px}.kitchen-intro{gap:28px;padding-block:40px 50px}}
+
+/* Matching studio product photography. */
+.product-photo{background:#fff8e9}.product-photo img{object-fit:contain;object-position:center}
+.studio-product-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(8px,2vw,30px);padding:35px 6vw;background:#fff8e9}
+.studio-product-strip img{display:block;width:100%;height:clamp(190px,28vw,390px);object-fit:contain}
+@media(max-width:600px){.studio-product-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.studio-product-strip img{height:240px}}
+
+.signature-pair{background:var(--paper)}.signature-pair figcaption{text-align:center;color:var(--deep-red);font-family:var(--utility);font-size:13px;line-height:1.5;margin-top:12px;letter-spacing:.04em}
+
+/* Keep the interactive character on the copy column's centre line. */
+.contact-popcorn-smile{left:auto;top:auto;margin:28px auto 0}
+.contact-popcorn-smile:hover{animation:contact-character-pop .8s ease-in-out}
+@keyframes contact-character-pop{0%,100%{transform:rotate(7deg) scale(1.05)}35%{transform:rotate(-5deg) scale(1.16)}70%{transform:rotate(12deg) scale(1.1)}}

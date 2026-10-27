@@ -1,0 +1,24 @@
+/* Shared mobile presentation: centered copy, media and actions. */
+@media screen and (max-width:700px){
+ body main,body main section,body main article,body main .story-copy,body main .feature-copy{text-align:center}
+ body main :is(h1,h2,h3,h4,p,figure){margin-left:auto;margin-right:auto}
+ body main :is(figure,.market-photo,.contact-photo,.contact-photo-current,.kitchen-photo,.featured-flavour-photo,.hero-booth){justify-self:center}
+ body main :is(.contact-popcorn-smile,.colouring-preview){margin-left:auto;margin-right:auto}
+ body main :is(.collaboration-actions,.event-facts,.review-actions){justify-content:center}
+ body main .event-facts{gap:20px}
+ body main :is(.contact-form .button,.feature-copy>.button){justify-self:center}
+ body main .halloween-hero .button{margin-left:auto;margin-right:auto}
+ body main :is(ol,ul){list-style-position:inside;padding-left:0}
+ body main :is(form,.nutrition-panel){text-align:left}
+ body main form :is(label,p,ul,ol){text-align:left}
+ body main form :is(ol,ul){list-style-position:outside;padding-left:22px}
+ body main .nutrition-panel th{text-align:left}
+ body main .nutrition-panel :is(td,caption){text-align:right}
+ body footer{flex-direction:column;align-items:center;justify-content:center;text-align:center}
+ body footer>div{justify-content:center;flex-wrap:wrap}
+}
+@media screen and (max-width:700px){
+ body main .contact-popcorn-smile{left:auto;top:auto}
+ body main .submission-layout>*{min-width:0;max-width:100%}
+ body main input[type=file]{width:100%;min-width:0}
+}

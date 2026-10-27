@@ -1,0 +1,106 @@
+/* One cream presentation panel, shared by every announcement. */
+.home-deco{background:linear-gradient(#8b2226ed,#8b2226ed),url('assets/art-deco-pattern.svg') center/240px 320px repeat,#8b2226}
+.home-deco .site-header{background:#8b2226;border-bottom:1px solid #d0a65366}
+.home-deco main#top{width:calc(100% - 64px);max-width:1320px;margin:34px auto 45px;background:#fff8e9;border:2px solid #c59d49;outline:1px solid #c59d4966;outline-offset:7px;box-shadow:0 12px 40px #390e1526}
+.home-features{background:transparent;color:#80252a;border-bottom:1px solid #c59d4970;padding:0 32px}
+.feature-slides{background:transparent}
+.feature-slide{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:44px;height:395px;min-height:0;width:100%;padding:35px 24px;margin:0;background:transparent;overflow:hidden}
+.feature-slide[hidden]{display:none}
+.feature-copy{min-width:0;align-self:center}
+.feature-copy .eyebrow{font-family:var(--utility);font-size:11px;font-weight:700;letter-spacing:.12em;line-height:1.6;color:#986c20;margin:0 0 15px}
+.feature-copy h1,.feature-copy h2{font-family:var(--display);font-size:clamp(40px,4.5vw,67px);font-weight:400;line-height:1.02;letter-spacing:-.02em;margin:0 0 17px;color:#8c272b}
+.feature-copy h2 em{font-style:normal;color:#ac7824}
+.feature-description{font-size:15px;line-height:1.6;color:#7d3430;max-width:520px;margin:0 0 18px}
+.feature-copy .button{background:#8c272b;color:#fff8e9;font-size:12px;letter-spacing:.06em;padding:13px 17px;margin:0;gap:18px;line-height:1.4}
+.feature-image-link{display:flex;position:relative;width:100%;height:300px;align-items:center;justify-content:center;overflow:hidden;margin:0;padding:0;background:transparent;border:0;box-shadow:none;transform:none}
+.feature-image-link img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;background:transparent;border:0;box-shadow:none;transform:none}
+.dressed-slide .feature-image-link img,.booth-slide .feature-image-link img{object-fit:cover}
+.dressed-slide .feature-image-link img{object-position:center 52%}
+.booth-slide .feature-image-link img{object-position:center 44%}
+.halloween-slide .feature-image-link img{object-fit:contain}
+.shopping-slide .feature-image-link img{object-fit:contain}
+.thunderstorm-slide .feature-image-link{background:url('assets/thunderstorm-collaboration-background.png') center/cover no-repeat}
+.thunderstorm-slide .feature-image-link:before{content:'';position:absolute;inset:0;background:#54282322}
+.thunderstorm-slide .feature-image-link img{position:relative;width:auto;height:94%;object-fit:contain;filter:drop-shadow(5px 5px 5px #351b1b66);z-index:1}
+.collaboration-actions{display:flex;align-items:center;gap:16px}
+.partner-logo{width:68px;max-height:48px;object-fit:contain;margin:0;padding:0;background:transparent}
+.feature-small{display:none}
+.carousel-controls{display:flex;justify-content:center;align-items:center;gap:25px;padding:14px 0 19px;background:transparent;color:#8c272b}
+.carousel-arrows,.carousel-dots{display:flex;gap:9px}
+.carousel-controls button{font:inherit;font-size:13px;min-width:32px;min-height:32px;padding:4px 8px;border:1px solid #c59d49;color:#8c272b;background:transparent;cursor:pointer}
+.carousel-dots button{border-radius:50%;min-width:28px;min-height:28px;font-size:12px}
+.carousel-dots button[aria-pressed=true]{background:#8c272b;border-color:#8c272b;color:#fff8e9}
+.carousel-controls .carousel-pause{font-size:12px;padding:5px 12px}
+.home-features a:focus-visible,.home-features button:focus-visible{outline:3px solid #bd8a27;outline-offset:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.home-deco .story{background:transparent;padding:55px 7vw 35px}
+.home-deco .story h2{color:#8c272b;font-size:clamp(48px,6vw,80px)}
+.home-deco .story p{color:#7d3430}
+.home-deco .signature-pair figcaption{color:#8c272b;font-size:13px}
+.home-deco .closing{background:transparent;border-top:1px solid #c59d4970;padding:45px 7vw}
+.home-deco .closing h2{color:#8c272b;font-size:clamp(45px,6vw,76px)}
+.home-deco .closing .button{background:#8c272b;color:#fff8e9}
+.home-deco footer{background:transparent;color:#ffe0a0}
+@media(min-width:1500px){.feature-copy h1,.feature-copy h2{font-size:68px}}
+@media(max-width:1050px){.feature-slide{gap:25px;padding:30px 10px;height:410px}.feature-copy h1,.feature-copy h2{font-size:49px}.feature-description{font-size:14px}.feature-image-link{height:290px}.home-features{padding:0 24px}.feature-copy .eyebrow{font-size:10px}}
+@media(max-width:700px){.home-deco main#top{width:calc(100% - 32px);margin:25px auto 30px;outline-offset:4px}.home-features{padding:0 18px}.feature-slide{grid-template-columns:1fr;height:auto;min-height:0;gap:24px;padding:28px 0 20px}.feature-copy h1,.feature-copy h2{font-size:48px}.feature-copy .eyebrow{font-size:10px;margin-bottom:12px}.feature-description{font-size:14px}.feature-image-link{height:210px;width:100%}.carousel-controls{gap:12px;flex-wrap:wrap;padding:10px 0 18px}.carousel-arrows,.carousel-dots{gap:6px}.carousel-controls button{min-width:29px;min-height:29px}.carousel-controls .carousel-pause{font-size:11px;padding:5px 9px}.partner-logo{width:60px;max-height:42px}.home-deco .story{padding:40px 7vw 25px}.home-deco .closing{padding:35px 7vw}.home-deco .site-header{padding-inline:6vw}}
+
+.carousel-controls{padding:12px 0 20px;gap:0;min-height:48px}
+.carousel-dots{gap:4px}
+.carousel-dots button{position:relative;display:block;width:32px;height:32px;min-width:32px;min-height:32px;padding:0;border:0;background:transparent!important;color:transparent;border-radius:50%;font-size:0}
+.carousel-dots button:before{content:'';position:absolute;width:8px;height:8px;left:12px;top:12px;border-radius:50%;background:#d6be8a;border:1px solid #ba944b;transition:background .15s,transform .15s}
+.carousel-dots button[aria-pressed=true]:before{background:#8c272b;border-color:#8c272b;transform:scale(1.2)}
+.carousel-dots button:hover:before{background:#ac7824}
+
+/* Shared alignment grid: logo, slide copy and lower-page content. */
+.home-deco{--home-gutter:56px;--home-outer:max(32px,calc((100vw - 1320px)/2))}
+.home-deco .site-header{padding-left:calc(var(--home-outer) + var(--home-gutter) + 2px);padding-right:calc(var(--home-outer) + var(--home-gutter) + 2px)}
+.home-features{padding-left:var(--home-gutter);padding-right:var(--home-gutter)}
+.feature-slide{height:395px;padding:35px 0;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:44px;align-items:start}
+.feature-copy{align-self:start;display:grid;grid-template-rows:34px 114px 90px 44px;align-content:start;text-align:left}
+.feature-copy .eyebrow{margin:0;font-size:10px;line-height:1.5;align-self:start}
+.feature-copy h1,.feature-copy h2{font-size:55px;line-height:1.02;margin:0;align-self:start}
+.feature-description{font-size:14px;line-height:1.6;margin:0;align-self:start}
+.feature-copy>.button,.collaboration-actions{align-self:start;justify-self:start}
+.feature-image-link{width:240px;height:300px;min-width:0;justify-self:center;align-self:start;overflow:hidden}
+.feature-image-link img{width:100%;height:100%;object-fit:cover;object-position:center}
+.halloween-slide .feature-image-link img{object-fit:cover}
+.dressed-slide .feature-image-link img{object-fit:cover;object-position:center}
+.shopping-slide .feature-image-link img{object-fit:cover}
+.booth-slide .feature-image-link img{object-position:center 45%}
+.thunderstorm-slide .feature-image-link img{width:auto;height:94%;object-fit:contain}
+.home-deco .story{display:block;padding:46px var(--home-gutter) 25px}
+.home-deco .story-copy{text-align:left}
+.home-deco .story h2{font-size:clamp(45px,5vw,68px)}
+.home-deco .story-copy p:not(.eyebrow){max-width:660px}
+.home-deco .signature-pair{width:330px;max-width:calc(100% - 2 * var(--home-gutter));margin:0 0 42px var(--home-gutter);padding:0;box-sizing:border-box}
+.home-deco .signature-pair figcaption{text-align:left}
+.home-deco .closing{text-align:left;padding:40px var(--home-gutter)}
+.home-deco .closing h2{font-size:clamp(44px,5vw,68px)}
+.home-deco footer{padding-left:calc(var(--home-outer) + var(--home-gutter) + 2px);padding-right:calc(var(--home-outer) + var(--home-gutter) + 2px)}
+@media(max-width:1050px){.home-deco{--home-gutter:34px}.feature-slide{gap:28px;height:410px}.feature-copy{grid-template-rows:40px 110px 110px 44px}.feature-copy h1,.feature-copy h2{font-size:48px}.feature-image-link{width:224px;height:280px}}
+@media(max-width:700px){.home-deco{--home-gutter:22px;--home-outer:16px}.home-deco .site-header{padding-left:calc(var(--home-outer) + var(--home-gutter) + 2px);padding-right:calc(var(--home-outer) + var(--home-gutter) + 2px)}.home-deco .brand img{width:min(300px,43vw)}.feature-slide{height:auto;gap:24px;grid-template-columns:1fr;padding:28px 0 20px}.feature-copy{display:block}.feature-copy .eyebrow{margin-bottom:14px}.feature-copy h1,.feature-copy h2{font-size:46px;margin-bottom:17px}.feature-description{margin-bottom:18px}.feature-image-link{width:224px;height:280px;max-width:100%;justify-self:center}.feature-copy .button{margin:0}.home-deco .story{padding-top:35px}.home-deco .closing{padding-block:35px}.home-deco .signature-pair{width:300px}}
+.home-deco .story{place-items:normal;justify-items:start;text-align:left}
+.home-deco .story-copy{width:100%;max-width:none;margin:0;justify-self:start;align-self:start}
+
+/* Keep complete artwork and the booth visible inside the shared image area. */
+.dressed-slide .feature-image-link img,.booth-slide .feature-image-link img{object-fit:contain;object-position:center}
+
+.shopping-slide .feature-image-link img{object-fit:contain;object-position:center}.thunderstorm-slide .feature-image-link{background:transparent}.thunderstorm-slide .feature-image-link:before{display:none}.thunderstorm-slide .feature-image-link img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;filter:none}
+
+/* A single centered axis for the stacked mobile presentation. */
+@media(max-width:700px){
+ .home-deco .site-header{justify-content:center;flex-wrap:wrap;gap:18px;text-align:center}
+ .home-deco .brand{margin-inline:auto}
+ .home-deco .brand img{width:min(300px,72vw)}
+ .home-deco .site-header nav{justify-content:center;flex-wrap:wrap}
+ .feature-copy{text-align:center;width:100%}
+ .feature-copy .eyebrow,.feature-copy h1,.feature-copy h2,.feature-description{margin-left:auto;margin-right:auto}
+ .feature-description{max-width:440px}
+ .feature-copy>.button{justify-self:center}
+ .collaboration-actions{justify-content:center;justify-self:center;flex-wrap:wrap}
+ .feature-image-link{justify-self:center}
+ .home-deco .closing{text-align:center}
+ .home-deco .closing h2{margin-left:auto;margin-right:auto}
+ .home-deco footer{text-align:center;justify-content:center;align-items:center}
+}
